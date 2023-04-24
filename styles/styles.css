@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -10,18 +10,66 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter', sans-serif;
 }
 
 body {
     background-color: var(--cor-de-fundo);
-    color: var(--branco-principal);
-    font-family: 'Inter', sans-serif;
-    font-size: 1,75rem;
 }
 
 .principal {
-    background-image: url("../assets/Background.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
+    padding: 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.principal_texto {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    width: 70vh;
+}
+
+.principal_texto_titulo {
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1,75rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.principal-botao-princ {
+    background-color: var(--botao-azul);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+}
+
+.principal-botao-sec {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+}
+
+.principal-texto-obs {
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;   
 }
