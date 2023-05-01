@@ -174,12 +174,9 @@ body {
 .disponivel {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
     padding-bottom: 20%;
-    background-color: #167BF7;
-    width: 50%;
 }
 
 .disponivel_titulo { 
@@ -189,7 +186,8 @@ body {
 
 .disponivel_imagens {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    width: 60%;
 }
 
 .disponivel_nomes {
